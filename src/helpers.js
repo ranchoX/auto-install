@@ -74,6 +74,7 @@ let getModulesFromFile = (path) => {
 
         modules = modules.filter((module) => isValidModule(module));
     } catch (err) {
+        console.log('err')
         console.log(colors.red(`Could not parse ${path}. There is a syntax error in file`));
     }
     return modules;
